@@ -1,24 +1,8 @@
 #!/bin/bash
 
-# Ensure we are running on Raspbian
-lsb_release -a 2>/dev/null | grep Raspbian
-if [ "$?" -ne "0" ]; then
-    echo "This OS is not Raspbian. Exiting..."
-    exit 1
-fi
+# Assume we are running on a Jessie distribution (IE DietPI)
 
-# Determine which version of Raspbian we are running on
-VERSION=`lsb_release -c 2>/dev/null | awk '{print $2}'`
-echo "Version of Raspbian determined to be: $VERSION"
-
-if [ "$VERSION" == "jessie" ]; then
     UBUNTU_VERSION="trusty"
-elif [ "$VERSION" == "wheezy" ]; then
-    UBUNTU_VERSION="precise"
-else
-    echo "Not running Raspbian Wheezy or Jessie. Exiting..."
-    exit 1;
-fi
 
 # Remove any existing Java
 sudo apt-get -y autoremove
