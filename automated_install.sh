@@ -558,8 +558,8 @@ mkdir $External_Loc/resources
 
 cp $Kitt_Ai_Loc/snowboy/include/snowboy-detect.h $External_Loc/include/snowboy-detect.h
 cp $Kitt_Ai_Loc/snowboy/examples/C++/portaudio/install/include/portaudio.h $External_Loc/include/portaudio.h
-cp $Kitt_Ai_Loc/snowboy/examples/C++/portaudio/install/include/pa_ringbuffer.h $External_Loc/include/pa_ringbuffer.h
-cp $Kitt_Ai_Loc/snowboy/examples/C++/portaudio/install/include/pa_util.h $External_Loc/include/pa_util.h
+cp $Kitt_Ai_Loc/snowboy/examples/C++/portaudio/src/common/pa_ringbuffer.h $External_Loc/include/pa_ringbuffer.h
+cp $Kitt_Ai_Loc/snowboy/examples/C++/portaudio/src/common/pa_util.h $External_Loc/include/pa_util.h
 cp $Kitt_Ai_Loc/snowboy/lib/$OS/libsnowboy-detect.a $External_Loc/lib/libsnowboy-detect.a
 cp $Kitt_Ai_Loc/snowboy/examples/C++/portaudio/install/lib/libportaudio.a $External_Loc/lib/libportaudio.a
 cp $Kitt_Ai_Loc/snowboy/resources/common.res $External_Loc/resources/common.res
